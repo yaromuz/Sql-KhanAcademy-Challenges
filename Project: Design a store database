@@ -1,0 +1,30 @@
+/* Spin-off of "Project: Design a store database" */
+
+
+/* Create your own store! Your store should sell one type of things, 
+like clothing or bikes, whatever you want your store to specialize in.
+You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store.
+You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items.*/
+
+
+CREATE TABLE myCarStore(id INTEGER PRIMARY KEY, model TEXT, year INTEGER, price INTEGER, color TEXT );
+
+INSERT INTO myCarStore VALUES (1, 'Volvo XC90', 2016, 70000, 'white');
+INSERT INTO  myCarStore VALUES (2, ' Volvo C30', 2013, 7000, 'red');
+INSERT INTO  myCarStore VALUES (3, ' Volvo XC90 Decor Frame', 2017, 12000, 'black');
+INSERT INTO  myCarStore VALUEs (4, 'Volvo S60 Exterior Styling Bottom Sil', 2019, 575000, 'silver');
+INSERT INTO  myCarStore VALUES (5, 'Volvo S80', 2007, 14000, 'pink');
+INSERT INTO  myCarStore VALUEs (6, 'Volvo 780', 2017, 130000,'velvet');
+INSERT INTO  myCarStore VALUES (7, 'Volvo 1800E ', 1970, 200000,'white');
+INSERT INTO myCarStore VALUES (8, 'XC60 Fender ', 2009, 8900,'red');
+INSERT INTO  myCarStore VALUES (9, 'Volvo XC40', 2019, 560606,'skyblue');
+INSERT INTO  myCarStore VALUES (10, 'Volvo S60 25t', 2007, 10000,'orange');
+INSERT INTO  myCarStore VALUES (11, ' Volvo S40 2.4i', 2006, 11000,'silver');
+INSERT INTO  myCarStore VALUES (12, 'Volvo Pv544', 1965, 101100,'black');
+INSERT INTO  myCarStore VALUES (13, 'Volvo Wagon 245 ', 1985, 18000 ,'gold');
+INSERT INTO  myCarStore VALUES (14, 'Volvo V70', 2008, 9000,'green');
+INSERT INTO  myCarStore VALUES (15, 'Volvo XC60 Hitch', 2018, 598000,'blue');
+
+SELECT  year, model, price  
+FROM  myCarStore
+ORDER BY price
